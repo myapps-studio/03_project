@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="vendor/normalize.css">
+        <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
+        <link rel="stylesheet" href="css/style.css"> 
+	</head>
+	<body>
+                <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "hash": true, "pageDots": false }'>
+                        <div class="carousel-cell container cell1" style="background-size: cover" id="carousel-cell1">
+                                test1
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                        </div>
+                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell2">
+                                test2
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                        </div>
+                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell3">
+                                test3
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                        </div>
+                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell4">
+                                test4
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                        </div>
+                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell5">
+                                test5
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+                        </div>
+                </div>
+        <br>
+                <div class="button-group">
+                                <button class="button">Restart</button>
+                        <!--       <button class="button hide">2</button>
+                                <button class="button hide">3</button>
+                                <button class="button hide">4</button>
+                                <button class="button hide">5</button> */ --> 
+                              </div>
+        <br>
+        <div class="progress-bar"></div>
+        <br>
+        <div class="links">
+                <a href="#carousel-cell1">View cell 1</a>
+                <a href="#carousel-cell2">View cell 2</a>
+                <a href="#carousel-cell3">View cell 3</a>
+                <a href="#carousel-cell4">View cell 4</a>
+                <a href="#carousel-cell5">View cell 5</a>
+        </div>
+        <script  src="vendor/hash.js"></script>
+        <script  src="vendor/flickity.pkgd.min.js"></script>
+        <script  src="js/script.js"></script>
+	</body>
+</html>
