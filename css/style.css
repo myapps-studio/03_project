@@ -46,6 +46,10 @@ button {
   background: #333;
 }
 
+.output {
+  margin-top: 300px;
+}
+
 @media screen and (min-width: 768px) {
   .carousel-cell img {
     height: 400px;

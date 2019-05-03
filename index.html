@@ -9,24 +9,19 @@
 	<body>
                 <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "hash": true, "pageDots": false }'>
                         <div class="carousel-cell container cell1" style="background-size: cover" id="carousel-cell1">
-                                test1
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                                    
                         </div>
                         <div class="carousel-cell container" style="background-size: cover" id="carousel-cell2">
-                                test2
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                                
                         </div>
                         <div class="carousel-cell container" style="background-size: cover" id="carousel-cell3">
-                                test3
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                                
                         </div>
                         <div class="carousel-cell container" style="background-size: cover" id="carousel-cell4">
-                                test4
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                                
                         </div>
                         <div class="carousel-cell container" style="background-size: cover" id="carousel-cell5">
-                                test5
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+                                
                         </div>
                 </div>
         <br>
@@ -47,6 +42,45 @@
                 <a href="#carousel-cell4">View cell 4</a>
                 <a href="#carousel-cell5">View cell 5</a>
         </div>
+
+<!-- moustache -->
+        <script id="myTemplate" type="x-tmpl-mustache">
+                <h5> {{title}} </h5>
+                {{{image}}}
+        </script>
+
+        <script>
+                var CaruselCellData = [
+                        {
+                                image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree"/>', 
+                                title: 'test1',
+                                description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                        },
+                        {
+                                image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />', 
+                                title: 'test2',
+                                description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                        },
+                        {
+                                image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"/>', 
+                                title: 'test3',
+                                description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                        },
+                        {
+                                image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />',
+                                title: 'test4',
+                                description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                        },
+                        {
+                                image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />',
+                                title: 'test5',
+                                description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                        }
+                ];
+        </script>
+<!-- end -->
+        <script  src="vendor/mustache.js"></script>
+        <script  src="js/myTemplate.js"></script>
         <script  src="vendor/hash.js"></script>
         <script  src="vendor/flickity.pkgd.min.js"></script>
         <script  src="js/script.js"></script>
