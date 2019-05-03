@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css"> 
 	</head>
 	<body>
+                <!-- AIzaSyBJNS0Ht_G8Ej4lETlZKtlUSKp4r7pPavc -->
                 <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "hash": true, "pageDots": false }'>
                         <div class="carousel-cell container cell1" style="background-size: cover" id="carousel-cell1">
                                     
@@ -42,13 +43,16 @@
                 <a href="#carousel-cell4">View cell 4</a>
                 <a href="#carousel-cell5">View cell 5</a>
         </div>
+        <br>
+        <!--The div element for the map -->
+        <div id="map">
+        </div>
 
 <!-- moustache -->
         <script id="myTemplate" type="x-tmpl-mustache">
                 <h5> {{title}} </h5>
                 {{{image}}}
         </script>
-
         <script>
                 var CaruselCellData = [
                         {
@@ -79,10 +83,13 @@
                 ];
         </script>
 <!-- end -->
+
         <script  src="vendor/mustache.js"></script>
         <script  src="js/myTemplate.js"></script>
         <script  src="vendor/hash.js"></script>
         <script  src="vendor/flickity.pkgd.min.js"></script>
         <script  src="js/script.js"></script>
-	</body>
+        <script  src="js/GoogleMaps.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJNS0Ht_G8Ej4lETlZKtlUSKp4r7pPavc&callback=initMap"></script>
+        </body>
 </html>

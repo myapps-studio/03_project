@@ -1,3 +1,4 @@
+
 // external js: flickity.pkgd.js
 
 var carousel = document.querySelector('.carousel');
