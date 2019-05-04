@@ -30,7 +30,7 @@ body {
   text-align: center;
 }
 
-button {
+.button {
   position: absolute;
   top: 120px;
   font-size: 22px;
