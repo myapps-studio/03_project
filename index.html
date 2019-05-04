@@ -29,6 +29,8 @@
                 <a href="#carousel-cell5">View cell 5</a>
         </div>
         <br>
+        <div id="output">
+                        </div>
         <div>
                 <p>
                         <button id="center-map">Center map</button>
@@ -42,7 +44,7 @@
 
 <!-- moustache -->
         <script id="myTemplate" type="x-tmpl-mustache">
-                <div class="carousel-cell container cell1" style="background-size: cover" id="{{id}}">
+                <div class="carousel-cell container cell1" style="background-size: cover">
                         <h5> {{title}} </h5>
                         {{{image}}}               
                 </div>
@@ -53,41 +55,38 @@
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree"/>', 
                                 title: 'test1',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 131.044},
-                                id: 'carousel-cell1'
+                                coords: {lat: -25.363, lng: 131.044}
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />', 
                                 title: 'test2',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 132.044},
-                                id: 'carousel-cell2'
+                                coords: {lat: -25.363, lng: 132.044}
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"/>', 
                                 title: 'test3',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 133.044},
-                                id: 'carousel-cell3'
+                                coords: {lat: -25.363, lng: 133.044}
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />',
                                 title: 'test4',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 134.044},
-                                id: 'carousel-cell4'
+                                coords: {lat: -25.363, lng: 134.044}
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />',
                                 title: 'test5',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 135.044},
-                                id: 'carousel-cell5'
+                                coords: {lat: -25.363, lng: 135.044}
                         }
                 ];
         </script>
 <!-- end -->
-
+<div id="output">
+I AM HERE
+</div>
         <script  src="vendor/mustache.js"></script>
         <script  src="js/myTemplate.js"></script>
         <script  src="vendor/hash.js"></script>
