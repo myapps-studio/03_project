@@ -7,32 +7,17 @@
         <link rel="stylesheet" href="css/style.css"> 
 	</head>
 	<body>
-                <!-- AIzaSyBJNS0Ht_G8Ej4lETlZKtlUSKp4r7pPavc -->
-                <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "hash": true, "pageDots": false }'>
-                        <div class="carousel-cell container cell1" style="background-size: cover" id="carousel-cell1">
-                                    
-                        </div>
-                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell2">
-                                
-                        </div>
-                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell3">
-                                
-                        </div>
-                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell4">
-                                
-                        </div>
-                        <div class="carousel-cell container" style="background-size: cover" id="carousel-cell5">
-                                
-                        </div>
+                <div class="carousel" id="CaruselInsert">
+                        <!-- insert carusel cell here -->
                 </div>
         <br>
                 <div class="button-group">
                                 <button class="button">Restart</button>
-                        <!--       <button class="button hide">2</button>
+                        <!--    <button class="button hide">2</button>
                                 <button class="button hide">3</button>
                                 <button class="button hide">4</button>
-                                <button class="button hide">5</button> */ --> 
-                              </div>
+                                <button class="button hide">5</button>  --> 
+                </div>
         <br>
         <div class="progress-bar"></div>
         <br>
@@ -57,8 +42,10 @@
 
 <!-- moustache -->
         <script id="myTemplate" type="x-tmpl-mustache">
-                <h5> {{title}} </h5>
-                {{{image}}}
+                <div class="carousel-cell container cell1" style="background-size: cover" id="{{id}}">
+                        <h5> {{title}} </h5>
+                        {{{image}}}               
+                </div>
         </script>
         <script>
                 var CaruselCellData = [
@@ -66,31 +53,36 @@
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree"/>', 
                                 title: 'test1',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 131.044}
+                                coords: {lat: -25.363, lng: 131.044},
+                                id: 'carousel-cell1'
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />', 
                                 title: 'test2',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 132.044}
+                                coords: {lat: -25.363, lng: 132.044},
+                                id: 'carousel-cell2'
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"/>', 
                                 title: 'test3',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 133.044}
+                                coords: {lat: -25.363, lng: 133.044},
+                                id: 'carousel-cell3'
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />',
                                 title: 'test4',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 134.044}
+                                coords: {lat: -25.363, lng: 134.044},
+                                id: 'carousel-cell4'
                         },
                         {
                                 image: '<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />',
                                 title: 'test5',
                                 description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
-                                coords: {lat: -25.363, lng: 135.044}
+                                coords: {lat: -25.363, lng: 135.044},
+                                id: 'carousel-cell5'
                         }
                 ];
         </script>

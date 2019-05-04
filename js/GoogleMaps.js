@@ -20,11 +20,14 @@
 var Counter = CaruselCellData.length;
 
 for(var i =0; i < Counter; i++){
-		 
+		 /* adding marker */
 		var marker = new google.maps.Marker({
 			position: CaruselCellData[i].coords,
 			map: map
-		}); 
+		});
+
+		/* adding marker */
+
 }
 
 /*

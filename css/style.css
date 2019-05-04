@@ -62,4 +62,8 @@ body {
   height: 400px;
   background-color: grey;
 }
+
+.flickity-page-dots {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

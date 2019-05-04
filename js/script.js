@@ -1,10 +1,13 @@
 
-// external js: flickity.pkgd.js
+/* init Carusel */
 
 var carousel = document.querySelector('.carousel');
 var flkty = new Flickity( carousel, {
+  
+  /* options */
   imagesLoaded: true,
   percentPosition: false,
+  hash: true
 });
 
 var imgs = carousel.querySelectorAll('.carousel-cell img');
