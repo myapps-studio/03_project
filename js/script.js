@@ -1,4 +1,5 @@
 
+
 /* init Carusel */
 
 var carousel = document.querySelector('.carousel');
@@ -26,8 +27,6 @@ flkty.on( 'scroll', function() {
 
 /* button */
 
-var flkty = new Flickity('.carousel');
-
 var buttonGroup = document.querySelector('.button-group');
 var buttons = buttonGroup.querySelectorAll('.button');
 buttons = fizzyUIUtils.makeArray( buttons );
@@ -40,10 +39,8 @@ buttonGroup.addEventListener( 'click', function( event ) {
   var index = buttons.indexOf( event.target );
   flkty.select( index );
 });
-
+ 
 /* scroll */
-
-var flkty = new Flickity('.carousel');
 
 var progressBar = document.querySelector('.progress-bar')
 

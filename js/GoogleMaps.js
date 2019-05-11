@@ -17,18 +17,27 @@
 		});
 		
 
-var Counter = CaruselCellData.length;
-
-for(var i =0; i < Counter; i++){
+	var Counter = CaruselCellData.length;
+	var output = document.getElementById('output');
+ 
+	for(var i = 0; i < Counter; i++){
 		 /* adding marker */
 		var marker = new google.maps.Marker({
 			position: CaruselCellData[i].coords,
 			map: map
 		});
 
-		/* adding marker */
+		/*HERE-------> */
+		/* event marker */
 
+		var output = document.getElementById('output');
+		output.innerHTML = i;
+
+		marker.addEventListener('click', function() {
+			flkty.select( i );
+		});
 }
+		/*<-------HERE*/
 
 /*
 		var markerOne = new google.maps.Marker({
@@ -135,3 +144,4 @@ for(var i =0; i < Counter; i++){
 	};
 	
 })();
+

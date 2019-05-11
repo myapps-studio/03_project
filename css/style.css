@@ -1,28 +1,69 @@
 /* external css: flickity.css */
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
+body {
+  font-family: sans-serif;
+}
 
-.container { max-width: 1200px; text-align: center; }
+.container {
+  max-width: 1200px;
+  text-align: center;
+}
 
-.carousel { background: #EEE; }
+.carousel {
+  background: #EEE;
+}
 
-.carousel-cell { margin-right: 20px; overflow: hidden; width: 100%; }
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+  width: 100%;
+}
 
-.carousel-cell img { display: block; }
+.carousel-cell img {
+  display: block;
+}
 
-.links { text-align: center; }
+.links {
+  text-align: center;
+}
 
-.button { position: absolute; top: 120px; font-size: 22px; }
+.button {
+  position: absolute;
+  top: 120px;
+  font-size: 22px;
+}
 
-.button-group { margin-bottom: 20px; }
+.button-group {
+  margin-bottom: 20px;
+}
 
-.progress-bar { height: 20px; width: 0; background: #333; }
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
 
-.output { margin-top: 300px; }
+.output {
+  margin-top: 300px;
+}
 
-@media screen and (min-width: 768px) { .carousel-cell img { height: 400px; width: 80%; } }
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 400px;
+    width: 80%;
+  }
+}
 
-#map { width: 100%; height: 400px; background-color: grey; }
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
 
-.flickity-page-dots { display: none; }
+.flickity-page-dots {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
