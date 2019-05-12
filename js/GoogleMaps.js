@@ -24,18 +24,19 @@
 		 /* adding marker */
 		var marker = new google.maps.Marker({
 			position: CaruselCellData[i].coords,
-			map: map
+			map: map,
+			theRealIndexIs: i
 		});
 
 		/*HERE-------> */
 		/* event marker */
-
-		var output = document.getElementById('output');
-		output.innerHTML = i;
-
-		marker.addEventListener('click', function() {
-			flkty.select( i );
-		});
+	
+		marker.addListener('click', function() {
+			
+	/*		console.log(this.theRealIndexIs) */
+			
+			flkty.select( this.theRealIndexIs );
+		  });
 }
 		/*<-------HERE*/
 
