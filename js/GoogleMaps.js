@@ -1,4 +1,7 @@
 'use strict';
+
+var map;
+
 (function(){ 
 	
 	var infos = document.getElementById('infos');
@@ -11,7 +14,7 @@
 		var coords2 = {lat: -25.363, lng: 134.044};
 		var coords3 = {lat: -25.363, lng: 137.044};
 
-		var map = new google.maps.Map(document.getElementById('map'), {
+		map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 7,
 			center: CaruselCellData[1].coords
 		});
@@ -28,7 +31,6 @@
 			theRealIndexIs: i
 		});
 
-		/*HERE-------> */
 		/* event marker */
 	
 		marker.addListener('click', function() {
@@ -38,7 +40,6 @@
 			flkty.select( this.theRealIndexIs );
 		  });
 }
-		/*<-------HERE*/
 
 /*
 		var markerOne = new google.maps.Marker({

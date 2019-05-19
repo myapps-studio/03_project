@@ -12,6 +12,7 @@ var flkty = new Flickity( carousel, {
 });
 
 var imgs = carousel.querySelectorAll('.carousel-cell img');
+
 // get transform property
 var docStyle = document.documentElement.style;
 var transformProp = typeof docStyle.transform == 'string' ?
@@ -49,4 +50,9 @@ flkty.on( 'scroll', function( progress ) {
   progressBar.style.width = progress * 100 + '%';
 });
 
+/* event change */
+
+flkty.on( 'change', function( index ) {
+  map.panTo(CaruselCellData[index].coords);
+});
 
